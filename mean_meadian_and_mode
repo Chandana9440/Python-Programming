@@ -1,0 +1,29 @@
+import statistics
+n= int(input("N= "))
+user_input= input("Enter the elements with spaces : ")
+elements= user_input.split( ) #the split method returns a list in python by default
+elements=[int(element) for element in elements]
+elements.sort()
+
+#Calculating Mean
+sum=0
+for element in elements:
+    sum+= element
+mean= (sum/n)
+print(f'Mean Value: {mean}')
+
+#calculating median
+median=0
+a=n//2
+if(n%2==0):
+    median= (elements[a-1] + elements[a])/2
+else:
+    median= elements[a]
+print(f'Median Value: {median}')
+
+#calculating mode
+try:
+    mode_value = statistics.mode(elements)
+    print("Mode:", mode_value)
+except statistics.StatisticsError as e:
+    print("Error:", e)
