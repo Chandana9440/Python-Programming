@@ -1,0 +1,33 @@
+# Get the number of values from the user
+n = int(input("Enter the number of values: "))
+
+# Get the values and their corresponding weights from the user
+values_input = input("Enter the values separated by spaces: ")
+weights_input = input("Enter the weights separated by spaces: ")
+
+# Convert the input strings to lists of integers
+weights = list(map(int, weights_input.split()))
+values = list(map(int, values_input.split()))
+
+# Ensure the lengths of weights and values match the number of values entered
+if len(weights) != n or len(values) != n:
+    raise ValueError("The number of weights and values must match the number specified.")
+
+# Initialize variables for the weighted sum and total weight
+total_weight = 0
+weighted_sum = 0
+
+# Calculate the weighted sum and total weight using a for loop
+for value, weight in zip(values, weights):
+    weighted_sum += value * weight
+    total_weight += weight
+
+# Calculate the weighted mean
+if total_weight != 0:
+    weighted_mean_value = weighted_sum / total_weight
+else:
+    weighted_mean_value = 0
+
+# Print the result
+print(f"The weighted mean is: {weighted_mean_value}")
+
