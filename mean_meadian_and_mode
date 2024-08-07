@@ -1,3 +1,4 @@
+# Program to find mean, median and mode
 import statistics
 n= int(input("N= "))
 user_input= input("Enter the elements with spaces : ")
