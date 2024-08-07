@@ -1,3 +1,4 @@
+Question: To find minimum, maximum element in an array
 # initiazing user input
 user_input=input("Enter the elements with spaces: ")
 
