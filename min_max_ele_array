@@ -8,8 +8,8 @@ arr= user_input.split()
 #Converting string values to int and sorting in order(Asc by default)
 arr_elements= sorted(int(element) for element in arr)
 
-#To print minimum value
+#To print the minimum value
 print(f'Minimum Value is: {arr_elements[0]}')
 
-#To print maximum value
+#To print the maximum value
 print(f'Maximum value is: {arr_elements[-1]}')
