@@ -22,7 +22,7 @@ else:
     median= elements[a]
 print(f'Median Value: {median}')
 
-#calculating mode
+#To calculate mode
 try:
     mode_value = statistics.mode(elements)
     print("Mode:", mode_value)
