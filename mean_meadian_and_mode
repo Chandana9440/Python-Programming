@@ -6,14 +6,14 @@ elements= user_input.split( ) #the split method returns a list in python by defa
 elements=[int(element) for element in elements]
 elements.sort()
 
-#Calculating Mean
+#To Calculate Mean
 sum=0
 for element in elements:
     sum+= element
 mean= (sum/n)
 print(f'Mean Value: {mean}')
 
-#calculating median
+#To Calculate median
 median=0
 a=n//2
 if(n%2==0):
